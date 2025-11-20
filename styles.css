@@ -167,9 +167,9 @@ header {
 /* Hero Section */
 .hero {
     position: relative;
-    background: linear-gradient(rgba(0,0,0,0.35), rgba(44, 85, 48, 0.4)), url('TCPimage1.png');
+    background: linear-gradient(rgba(0,0,0,0.35), rgba(44, 85, 48, 0.15)), url('TCPimage1.png');
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-attachment: fixed;
     color: white;
     text-align: center;
@@ -187,7 +187,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(44, 85, 48, 0.5) 0%, rgba(0, 0, 0, 0.35) 100%);
+    background: linear-gradient(135deg, rgba(44, 85, 48, 0.2) 0%, rgba(0, 0, 0, 0.35) 100%);
     z-index: 1;
 }
 
@@ -197,6 +197,7 @@ header {
     max-width: 900px;
     margin: 0 auto;
     animation: fadeInUp 0.8s ease-out;
+    text-align: center;
 }
 
 @keyframes fadeInUp {
@@ -999,9 +1000,10 @@ footer {
 
 @media (max-width: 768px) {
     .hero {
-        padding: 80px 20px;
-        min-height: 500px;
+        padding: 70px 20px;
+        min-height: 460px;
         background-attachment: scroll;
+        background-position: center;
     }
     
     .hero h1 {
@@ -1014,6 +1016,13 @@ footer {
     
     .hero-phone {
         font-size: 1.8rem;
+    }
+
+    .hero-content {
+        background: rgba(0, 0, 0, 0.45);
+        padding: 25px 20px;
+        border-radius: 18px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
     }
     
     .cta {
@@ -1138,8 +1147,9 @@ footer {
     }
     
     .hero {
-        padding: 60px 20px;
-        min-height: 400px;
+        padding: 50px 18px 60px;
+        min-height: 380px;
+        background-position: center;
     }
     
     .hero h1 {
@@ -1152,6 +1162,11 @@ footer {
     
     .hero-phone {
         font-size: 1.5rem;
+    }
+
+    .hero-content {
+        padding: 20px 18px;
+        border-radius: 14px;
     }
     
     .cta {
