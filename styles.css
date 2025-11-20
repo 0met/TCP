@@ -5,17 +5,36 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
 }
 
 /* Header Styles */
@@ -1001,9 +1020,10 @@ footer {
 @media (max-width: 768px) {
     .hero {
         padding: 60px 15px;
-        min-height: 500px;
+        min-height: 550px;
         background-attachment: scroll;
-        background-position: center;
+        background-position: center center;
+        background-size: cover;
     }
     
     .hero h1 {
@@ -1024,16 +1044,19 @@ footer {
 
     .hero-content {
         background: rgba(0, 0, 0, 0.5);
-        padding: 30px 20px;
+        padding: 25px 18px;
         border-radius: 15px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        max-width: 95%;
+        width: 100%;
     }
     
     .hero .call-button {
-        font-size: 1rem;
-        padding: 14px 25px;
+        font-size: 0.95rem;
+        padding: 14px 20px;
         white-space: normal;
         line-height: 1.4;
+        max-width: 100%;
     }
     
     .cta {
@@ -1176,9 +1199,10 @@ footer {
     }
     
     .hero {
-        padding: 40px 15px 50px;
-        min-height: 450px;
-        background-position: center;
+        padding: 50px 15px;
+        min-height: 500px;
+        background-position: center center;
+        background-size: cover;
     }
     
     .hero h1 {
@@ -1197,15 +1221,19 @@ footer {
     }
 
     .hero-content {
-        padding: 25px 18px;
+        padding: 22px 15px;
         border-radius: 12px;
+        max-width: 95%;
+        margin: 0 auto;
     }
     
     .hero .call-button {
-        font-size: 0.95rem;
-        padding: 12px 20px;
+        font-size: 0.9rem;
+        padding: 12px 18px;
         width: 100%;
         text-align: center;
+        max-width: 100%;
+        overflow-wrap: break-word;
     }
     
     .cta {
